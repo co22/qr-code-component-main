@@ -1,8 +1,3 @@
-/* - White: hsl(0, 0%, 100%)
-- Light gray: hsl(212, 45%, 89%)
-- Grayish blue: hsl(220, 15%, 55%)
-- Dark blue: hsl(218, 44%, 22%) */
-
 * {
     margin: 0;
     padding: 0;
@@ -15,13 +10,67 @@
     --light-gray: hsl(212, 45%, 89%);
     --grayish-blue: hsl(220, 15%, 55%);
     --dark-blue: hsl(218, 44%, 22%);
+    /* Font */
     font-family: 'Outfit', sans-serif;
 }
 
 html, body {
-
+    background-color: var(--light-gray);
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Card styling */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 5%;
+    margin: 0 1.7rem 0 1.7rem;
+    padding: 0.2rem 1rem 1rem 1rem;
+    height: 75%;
+}
+
+/* Image styling */
+.qr-code-image {
+    max-width: 100%;
+    border-radius: 5%;
+}
+
+/* Text styling */
+body h1 {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--dark-blue);
+    padding: 1.5rem 1rem 0 1rem;
+    text-align: center;
+}
 body p {
+    font-weight: 400;
     font-size: 15px;
+    color: var(--grayish-blue);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Attribution styling */
+.attribution {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0.5rem
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
