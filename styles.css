@@ -50,14 +50,14 @@ body {
 }
 
 /* Text styling */
-body h1 {
+main h1 {
     font-weight: 700;
     font-size: 22px;
     color: var(--dark-blue);
     padding: 24px 16px 0 16px;
     text-align: center;
 }
-body p {
+main p {
     font-weight: 400;
     font-size: 15px;
     color: var(--grayish-blue);
@@ -66,12 +66,16 @@ body p {
 }
 
 /* Attribution styling */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .attribution {
     position: absolute;
     bottom: 0;
     margin-bottom: 8px;
-}
-.attribution {
     font-size: 11px;
     text-align: center;
 }
